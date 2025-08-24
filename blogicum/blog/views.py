@@ -51,6 +51,7 @@ posts_dict: Dict[int, Dict[str, str | int]] = {
     post['id']: post for post in posts
 }
 
+
 def index(request):
     template_name = 'blog/index.html'
     context = {'posts': posts[::-1]}
