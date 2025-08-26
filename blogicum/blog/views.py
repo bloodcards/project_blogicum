@@ -1,10 +1,8 @@
-from typing import Dict, List
-
 from django.http import Http404
 from django.shortcuts import render
 
 # Create your views here.
-posts: List[Dict[str, str | int]] = [
+posts: list[dict[str, str | int]] = [
     {
         'id': 0,
         'location': 'Остров отчаянья',
@@ -47,7 +45,7 @@ posts: List[Dict[str, str | int]] = [
     },
 ]
 
-posts_dict: Dict[int, Dict[str, str | int]] = {
+posts_dict: dict[int, dict[str, str | int]] = {
     post['id']: post for post in posts
 }
 
